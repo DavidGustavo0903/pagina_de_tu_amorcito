@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Nobia</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+        
+
+        function mueveElBoton(){
+            width = 600;
+            height =400;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+            
+
+        }
+    </script>
+</head>
+<body>
+    <div class="container text-center" style="padding-top:300px;width: 800px">
+    <div class="card text-center bg-transparent" >
+        <div class="card-header text-muted">
+          Mi momento ha llegado...
+        </div>
+        <div class="card-body" style="height: 150px">
+          <h5 class="card-title text-dark">Quieres ser mi novia? <i class="bi bi-heart-fill"></i></h5> <br>
+          <div>
+        
+          <button type="button"  id="btnSi" class="btn btn-success text-white" data-bs-toggle="modal" data-bs-target="#modal">Si Quiero <i class="bi bi-emoji-laughing-fill"></i></button>
+          <button type="button" id="btnNo" onmouseover="mueveElBoton()" class="btn btn-warning">No Quiero <i class="bi bi-emoji-frown-fill"></i></button> 
+        </div>       </div>
+        <div class="card-footer text-muted">
+          Dale click a cualquier Boton Chiquita
+        </div>
+      </div>
+      <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="container">
+    <div class="modal" tabindex="-1" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Sabia que dirias que si jijiji
+                </div>
+                <div class="modal-body">
+                    Yo tambien quiero hermosa 7u7
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+</body>
+</html>
